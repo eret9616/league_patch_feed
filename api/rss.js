@@ -21,8 +21,8 @@ async function fetchPatchNotes(req) {
             pubDate: new Date(),
         });
 
-        // 查找所有带有aria-label="Patch"的元素
-        $('a[aria-label^="Patch"]').each((i, element) => {
+        // 查找所有aria-label包含"Patch"的链接元素
+        $('a[aria-label*="Patch"]').each((i, element) => {
             const $element = $(element);
             
             // 提取补丁信息
