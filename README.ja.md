@@ -1,6 +1,6 @@
 # リーグ・オブ・レジェンド パッチノート RSS フィード
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **日本語** · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt-BR.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · **日本語** · [한국어](README.ko.md)
 
 リーグ・オブ・レジェンドのパッチノートを配信する RSS フィードです。Vercel 上にデプロイされています。
 

@@ -1,6 +1,6 @@
 # 英雄联盟补丁说明 RSS 订阅源
 
-[English](README.md) · **简体中文** · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt-BR.md)
+[English](README.md) · **简体中文** · [日本語](README.ja.md) · [한국어](README.ko.md)
 
 这是一个英雄联盟补丁说明的 RSS 订阅源，部署在 Vercel 上。
 

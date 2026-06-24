@@ -1,6 +1,6 @@
 # 리그 오브 레전드 패치 노트 RSS 피드
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · **한국어** · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt-BR.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · **한국어**
 
 리그 오브 레전드 패치 노트를 제공하는 RSS 피드이며, Vercel에 배포되어 있습니다.
 
