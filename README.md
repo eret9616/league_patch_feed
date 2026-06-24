@@ -1,30 +1,30 @@
 # League of Legends Patch Notes RSS Feed
 
-这是一个英雄联盟补丁说明的RSS订阅源，部署在Vercel上。
+An RSS feed for League of Legends patch notes, deployed on Vercel.
 
-## 功能
+## Features
 
-- 自动抓取英雄联盟官方补丁说明
-- 生成RSS订阅源
-- 支持图片和详细描述
+- Automatically scrapes the official League of Legends patch notes
+- Generates an RSS feed
+- Supports images and detailed descriptions
 
-## 部署
+## Deployment
 
-1. Fork 这个仓库
-2. 在 [Vercel](https://vercel.com) 上导入你的仓库
-3. 部署完成后，你的RSS订阅地址将是：`https://你的域名/api/rss`
+1. Fork this repository
+2. Import your repository on [Vercel](https://vercel.com)
+3. Once deployed, your RSS feed URL will be: `https://your-domain/api/rss`
 
-## 本地开发
+## Local Development
 
 ```bash
-# 安装依赖
+# Install dependencies
 npm install
 
-# 本地运行
+# Run locally
 npm run dev
 ```
 
-## 技术栈
+## Tech Stack
 
 - Node.js
 - Axios
@@ -32,7 +32,7 @@ npm run dev
 - RSS
 - Vercel Serverless Functions
 
-## 注意事项
+## Notes
 
-- 请确保遵守英雄联盟官方网站的使用条款
-- 建议适当设置请求间隔，避免频繁请求 
+- Please make sure to comply with the terms of use of the official League of Legends website
+- It is recommended to set a reasonable request interval to avoid frequent requests

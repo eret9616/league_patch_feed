@@ -7,7 +7,7 @@ async function fetchPatchNotes(req) {
         const response = await axios.get('https://www.leagueoflegends.com/en-us/news/tags/patch-notes/');
         const $ = cheerio.load(response.data);
         
-        // 获取当前请求的URL
+        // Get the URL of the current request
         const protocol = req.headers['x-forwarded-proto'] || 'http';
         const host = req.headers['x-forwarded-host'] || req.headers.host;
         const feedUrl = `${protocol}://${host}/api/rss`;
@@ -21,11 +21,11 @@ async function fetchPatchNotes(req) {
             pubDate: new Date(),
         });
 
-        // 查找所有aria-label包含"Patch"的链接元素
+        // Find all link elements whose aria-label contains "Patch"
         $('a[aria-label*="Patch"]').each((i, element) => {
             const $element = $(element);
             
-            // 提取补丁信息
+            // Extract patch information
             const patchInfo = {
                 version: $element.attr('aria-label').replace(' Notes', ''),
                 date: $element.find('time').attr('datetime'),
@@ -34,7 +34,7 @@ async function fetchPatchNotes(req) {
                 url: $element.attr('href')
             };
             
-            // 添加到RSS feed
+            // Add to the RSS feed
             feed.item({
                 title: patchInfo.version,
                 description: patchInfo.description,
@@ -54,7 +54,7 @@ async function fetchPatchNotes(req) {
     }
 }
 
-// Vercel API 路由处理函数
+// Vercel API route handler
 module.exports = async (req, res) => {
     try {
         const rssFeed = await fetchPatchNotes(req);
